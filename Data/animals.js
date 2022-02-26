@@ -1,3 +1,5 @@
+import Animal from "../js/Animal.js";
+/** @type Animal[] */
 export default [
     {
         "Name": "Hawksbill Turtle",
@@ -35,4 +37,4 @@ export default [
         "FunFacts": "Fewer than 400 exist today, Smallest species of tigers",
         "Threats": "Hunting, Deforestation"
     }
-]
+].map(x => Object.assign(new Animal(), x))

@@ -1,3 +1,5 @@
+import Animal from "../js/Animal.js";
+/** @type Animal[] */
 <?php
 $f = fopen("php://stdin", "r");
 $headers = array_map(fn($header) => str_replace([" "], [""], $header), fgetcsv($f));
@@ -8,3 +10,4 @@ while($line = fgetcsv($f)) {
 	$data[] = $line;
 }
 echo "export default " . json_encode($data, JSON_PRETTY_PRINT | JSON_THROW_ON_ERROR);
+?>.map(x => Object.assign(new Animal(), x))
