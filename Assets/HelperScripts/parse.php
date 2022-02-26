@@ -15,7 +15,7 @@ public class AnimalData
     public static readonly System.Collections.Generic.Dictionary<Animal, AnimalData> Animals = new System.Collections.Generic.Dictionary<Animal, AnimalData>
     {
 <?php foreach($data as $entry): ?>
-        { Animal.<?= str_replace(" ", "", $entry["Name"]) ?>, new AnimalData { <?= implode(", ", array_map(fn($v, $k) => "$k = " . json_encode($v, JSON_THROW_ON_ERROR), $entry, array_keys($entry))) ?>, Image = UnityEngine.Resources.Load<UnityEngine.Sprite>("<?= str_replace(" ", "", $entry["Name"]) ?>"), } },
+        { Animal.<?= str_replace(" ", "", $entry["Name"]) ?>, new AnimalData { <?= implode(", ", array_map(fn($v, $k) => "$k = " . json_encode($v, JSON_THROW_ON_ERROR), $entry, array_keys($entry))) ?>, Image = UnityEngine.Resources.Load<UnityEngine.Sprite>("<?= $entry["Name"] ?>"), } },
 <?php endforeach; ?>
     };
 <?php foreach($headers as $h): ?>
