@@ -18,7 +18,7 @@ const screens = {
     pet: new PetScreen()
 };
 
-let currentScreen = "";
+let currentScreen = "main";
 
 let goalBtn = document.querySelector("#goals");
 let petBtn = document.querySelector("#pet");

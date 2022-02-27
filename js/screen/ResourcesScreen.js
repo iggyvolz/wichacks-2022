@@ -7,7 +7,7 @@ export default class ResourcesScreen extends Screen
      * @param {Gamestate} gs
      * @param {CanvasRenderingContext2D} ctx 
      */
-     async draw(ctx){
+     async draw(gs, ctx){
         ctx.drawImage(await GoalAdd, 0, 0);
     }
 }
