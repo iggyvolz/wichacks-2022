@@ -3,6 +3,10 @@ import MainScreen from "./screen/MainScreen.js";
 import Dialog from "./Dialog.js";
 import animals from "../Data/animals.js";
 import GoalAddScreen from "./screen/GoalAddScreen.js"
+import GoalViewScreen from "./screen/GoalViewScreen.js"
+import ResourcesScreen from "./screen/ResourcesScreen.js"
+import ShopScreen from "./screen/ShopScreen.js"
+import PetScreen from "./screen/PetScreen.js"
 import { ResourcesIcon } from "../Images/Images.js";
 import ResourcesScreen from "./screen/ResourcesScreen.js";
 
@@ -11,7 +15,8 @@ const screens = {
     goalAdd: new GoalAddScreen(),
     goalView: new GoalViewScreen(),
     resources: new ResourcesScreen(),
-    shop: new ShopScreen()
+    shop: new ShopScreen(),
+    pet: new PetScreen()
 };
 
 export default class Canvas extends HTMLCanvasElement
