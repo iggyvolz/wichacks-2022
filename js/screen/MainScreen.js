@@ -14,7 +14,7 @@ export default class MainScreen extends Screen
         console.log(gs)
         console.log(name + hat)
         const animalimage = await Images[name + hat]
-        ctx.drawImage(animalimage, (screen.width/2)-(animalimage.width), 1300);
+        ctx.drawImage(animalimage, (screen.width/2)-(animalimage.width), (screen.height + 300));
         ctx.drawImage(await GoalsIcon, 30, 1740)
         ctx.drawImage(await PetIcon, 280, 1740)
         console.log(ShopIcon + "is here")
