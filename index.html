@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="js/vendor/dialog-polyfill.css" />
-        <link rel="stylesheet" type="text/css" href="buttons.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
         <script src="js/vendor/dialog-polyfill.js"></script>
         <script src="js/main.js" type="module"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +13,17 @@
             secondary: font-family: 'League Spartan', sans-serif;
             primary: font-family: 'Righteous', cursive; -->
     </head>
-    <body style="display:flex;justify-content:center;align-items:center;">
-        <button class="btn" id ="menu" > </button>
-        <button class="btn" id ="goals" ></button>
-        <button class="btn" id ="pet" ></button>
-        <button class="btn" id ="shop" hidden> <img src="Images/ShopIcon.png"></button>
-        <button class="btn" id ="resources" hidden> <img src="Images/ResourcesIcon.png"></button>
+    <body>
+        <!--what if we define a div that is the same size and position as the canvas then place the html elements relative to the div? that may allow us to make it seem as if the elements are positioned relative to the canvas BUT they're not!-->
 
-        <canvas is="our-canvas"></canvas>
+        <div id="canvasBody">
+            <button class="btn" id ="menu" > </button>
+            <button class="btn" id ="goals" ></button>
+            <button class="btn" id ="pet" ></button>
+            <button class="btn" id ="shop" hidden> <img src="Images/ShopIcon.png"></button>
+            <button class="btn" id ="resources" hidden> <img src="Images/ResourcesIcon.png"></button>
+            <canvas is="our-canvas"></canvas>
+        </div>
 
     </body>
     
