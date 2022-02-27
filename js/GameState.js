@@ -6,7 +6,7 @@ export default class Gamestate
     Energy = 0;
     /** @type int */
     Leaves = 0;
-    /** @type string[] */
+    /** @type int[] */
     Goals = [];
     /** @type string[] */
     Items = [];
