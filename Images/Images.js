@@ -1,4 +1,6 @@
 /** @type Promise<HTMLImageElement> */export const BackgroundYard = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/BackgroundYard.jpg';});
+/** @type Promise<HTMLImageElement> */export const GoalAdd = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/GoalAdd.jpg';});
+/** @type Promise<HTMLImageElement> */export const Goal = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/Goal.jpg';});
 /** @type Promise<HTMLImageElement> */export const GoalsIcon = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/GoalsIcon.png';});
 /** @type Promise<HTMLImageElement> */export const HawksbillTurtlesantahat = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/HawksbillTurtle-santahat.png';});
 /** @type Promise<HTMLImageElement> */export const HawksbillTurtletophat = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/HawksbillTurtle-tophat.png';});
@@ -18,4 +20,4 @@
 /** @type Promise<HTMLImageElement> */export const SettingsIcon = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/SettingsIcon.png';});
 /** @type Promise<HTMLImageElement> */export const ShopIcon = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/ShopIcon.png';});
 /** @type Promise<HTMLImageElement> */export const profile = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/profile.png';});
-export default {BackgroundYard,GoalsIcon,HawksbillTurtlesantahat,HawksbillTurtletophat,HawksbillTurtle,MenuIcon,PetIcon,ResourcesIcon,Saolasantahat,Saolatophat,Saola,AfricanForestElephantsantahat,AfricanForestElephanttophat,AfricanForestElephant,SundaTigersantahat,SundaTigertophat,SundaTiger,SettingsIcon,ShopIcon,profile,};
+export default {BackgroundYard,GoalAdd,Goal,GoalsIcon,HawksbillTurtlesantahat,HawksbillTurtletophat,HawksbillTurtle,MenuIcon,PetIcon,ResourcesIcon,Saolasantahat,Saolatophat,Saola,AfricanForestElephantsantahat,AfricanForestElephanttophat,AfricanForestElephant,SundaTigersantahat,SundaTigertophat,SundaTiger,SettingsIcon,ShopIcon,profile,};
