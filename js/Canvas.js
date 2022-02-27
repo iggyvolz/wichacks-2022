@@ -8,6 +8,7 @@ const screens = {
     main: new MainScreen(),
     goalAdd: new GoalAddScreen(),
 };
+
 export default class Canvas extends HTMLCanvasElement
 {
     /** @var Gamestate */
