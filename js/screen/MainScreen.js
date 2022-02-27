@@ -14,6 +14,6 @@ export default class MainScreen extends Screen
         console.log(gs)
         console.log(name + hat)
         const image = await Images[name + hat]
-        ctx.drawImage(image, (screen.width/2)-(image.width), 650 );
+        ctx.drawImage(image, (screen.width/2)-(image.width), 1300);
     }
 }
