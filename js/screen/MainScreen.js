@@ -1,6 +1,6 @@
 import Screen from "./Screen.js";
 import Gamestate from "../GameState.js";
-import Images, { BackgroundYard, GoalsIcon, PetIcon, ResourcesIcon, ShopIcon } from "../../Images/Images.js";
+import Images, { BackgroundYard, GoalsIcon, MenuIcon, PetIcon, ResourcesIcon, ShopIcon } from "../../Images/Images.js";
 export default class MainScreen extends Screen
 {
     /**
@@ -21,6 +21,7 @@ export default class MainScreen extends Screen
         ctx.drawImage(await ShopIcon, 580, 1740)
         console.log(ResourcesIcon + "is here")
         ctx.drawImage(await ResourcesIcon, 870, 1740)
+        console.log(MenuIcon)
         ctx.drawImage(await MenuIcon, 30, 30)
     }
 }
