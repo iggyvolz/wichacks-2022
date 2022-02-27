@@ -7,7 +7,7 @@ import GoalViewScreen from "./screen/GoalViewScreen.js"
 import ResourcesScreen from "./screen/ResourcesScreen.js"
 import ShopScreen from "./screen/ShopScreen.js"
 import PetScreen from "./screen/PetScreen.js"
-import { ResourcesIcon } from "../Images/Images.js";
+import { BackgroundYard, ResourcesIcon } from "../Images/Images.js";
 
 const screens = {
     main: new MainScreen(),
@@ -17,6 +17,40 @@ const screens = {
     shop: new ShopScreen(),
     pet: new PetScreen()
 };
+
+let currentScreen = "";
+
+let goalBtn = document.querySelector("#goals");
+let petBtn = document.querySelector("#pet");
+let shopBtn = document.querySelector("#shop");
+let resourceBtn = document.querySelector("#resources");
+//let mainBtn = document.querySelector("#menu");
+goalBtn.addEventListener("click", changeScreen(goalBtn));
+petBtn.addEventListener("click", changeScreen(petBtn));
+shopBtn.addEventListener("click", changeScreen(shopBtn));
+resourceBtn.addEventListener("click", changeScreen(resourceBtn));
+
+function changeScreen(btn){
+    switch (btn) {
+        case goalBtn:
+          currentScreen = "goalView";
+          console.log("goal screen!")
+          break;
+        case petBtn:
+            currentScreen = "pet";
+            console.log("pet screen!")
+            break;
+        case shopBtn:
+          currentScreen = "shop";
+          console.log("shop screen!")
+          break;
+        case resourceBtn:
+          currentScreen = "resources";
+          console.log("resource screen!")
+          break;
+    }
+}
+
 
 export default class Canvas extends HTMLCanvasElement
 {
@@ -29,7 +63,7 @@ export default class Canvas extends HTMLCanvasElement
         this.width = 1080;
         this.height = 1920;
         this.style="max-width: 90vw; max-height: 90vh; border: 1px solid black";
-        this.gs.Screen = "main";
+        this.gs.Screen = currentScreen;
         const dialog = Dialog();
         console.log({dialog});
         const form = dialog.appendChild(document.createElement("form"));
