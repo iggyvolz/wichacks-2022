@@ -8,7 +8,6 @@ import ResourcesScreen from "./screen/ResourcesScreen.js"
 import ShopScreen from "./screen/ShopScreen.js"
 import PetScreen from "./screen/PetScreen.js"
 import { ResourcesIcon } from "../Images/Images.js";
-import ResourcesScreen from "./screen/ResourcesScreen.js";
 
 const screens = {
     main: new MainScreen(),
