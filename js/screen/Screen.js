@@ -1,6 +1,4 @@
 import Gamestate from "../GameState.js";
-import TempState from "../TempState.js";
-
 export default class Screen
 {
     /**

@@ -1,5 +1,4 @@
 import Gamestate from "./GameState.js";
-import TempState from "./TempState.js";
 import MainScreen from "./screen/MainScreen.js";
 import Dialog from "./Dialog.js";
 import animals from "../Data/animals.js";
@@ -37,6 +36,6 @@ export default class Canvas extends HTMLCanvasElement
     frame() {
         this.ctx.clearRect(0,0,this.width,this.height);
         screens[this.gs.Screen].draw(this.gs, this.ctx);
-        requestAnimationFrame(this.frame.bind(this));
+        //requestAnimationFrame(this.frame.bind(this));
     }
 }
