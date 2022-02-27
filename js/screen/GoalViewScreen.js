@@ -1,7 +1,7 @@
 import Screen from "./Screen.js";
 import Gamestate from "../GameState.js";
 import Images, { BackgroundYard, GoalsIcon, MenuIcon, PetIcon, ResourcesIcon, ShopIcon } from "../../Images/Images.js";
-export default class GoalScreen extends Screen
+export default class GoalViewScreen extends Screen
 {
     /**
      * @param {Gamestate} gs
