@@ -12,6 +12,7 @@ export default class MainScreen extends Screen
         const name = gs.Animal.replaceAll(" ", "");
         const hat = gs.Hat ?? ""
         console.log(name + hat)
-        ctx.drawImage(await Images[name + hat], screen.width/8, 650 );
+        const image = await Images[name + hat]
+        ctx.drawImage(image, (screen.width/2)-(image.width), 650 );
     }
 }
