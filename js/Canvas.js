@@ -11,8 +11,6 @@ export default class Canvas extends HTMLCanvasElement
 {
     /** @var Gamestate */
     gs = new Gamestate();
-    /** @var TempState */
-    ts = new TempState();
     get ctx() {
         return this.getContext("2d");
     }
@@ -20,7 +18,7 @@ export default class Canvas extends HTMLCanvasElement
         this.width = 1080;
         this.height = 1920;
         this.style="max-width: 90vw; max-height: 90vh; border: 1px solid black";
-        this.ts.Screen = "main";
+        this.gs.Screen = "main";
         const dialog = Dialog();
         console.log({dialog});
         const form = dialog.appendChild(document.createElement("form"));
@@ -38,7 +36,7 @@ export default class Canvas extends HTMLCanvasElement
     }
     frame() {
         this.ctx.clearRect(0,0,this.width,this.height);
-        screens[this.ts.Screen].draw(this.gs, this.ts, this.ctx);
+        screens[this.gs.Screen].draw(this.gs, this.ctx);
         requestAnimationFrame(this.frame.bind(this));
     }
 }

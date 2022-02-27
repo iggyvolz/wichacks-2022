@@ -6,11 +6,12 @@ export default class MainScreen extends Screen
 {
     /**
      * @param {Gamestate} gs
-     * @param {TempState} ts
      * @param {CanvasRenderingContext2D} ctx 
      */
-    async draw(gs,ts,ctx){
-        // console.log({gs,ts,ctx});
-        ctx.drawImage(await Images[gs.Animal.replaceAll(" ", "")], 0, 0);
+    async draw(gs,ctx){
+        const name = "Saola"
+        const hat = "tophat"
+        console.log(name + hat)
+        ctx.drawImage(await Images[name + hat], 0, 0);
     }
 }
