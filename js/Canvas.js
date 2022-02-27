@@ -2,9 +2,11 @@ import Gamestate from "./GameState.js";
 import MainScreen from "./screen/MainScreen.js";
 import Dialog from "./Dialog.js";
 import animals from "../Data/animals.js";
+import GoalAddScreen from "./screen/GoalAddScreen.js"
 
 const screens = {
     main: new MainScreen(),
+    goalAdd: new GoalAddScreen(),
 };
 export default class Canvas extends HTMLCanvasElement
 {
