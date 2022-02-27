@@ -1,0 +1,3 @@
+/*This will hold the styles for our buttons!*/
+.btn {position: absolute;}
+#menu {width: 45px; height: 40px; left: 596px; top: 20px; background-image: url(/Images/MenuIcon.png); background-size: 45px 40px; padding: 0; border: none; background-color: transparent;}

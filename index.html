@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="js/vendor/dialog-polyfill.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
         <script src="js/vendor/dialog-polyfill.js"></script>
         <script src="js/main.js" type="module"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,11 +14,14 @@
             primary: font-family: 'Righteous', cursive; -->
     </head>
     <body style="display:flex;justify-content:center;align-items:center;">
+        <button class="btn" id ="menu" > </button><!--<img src="Images/MenuIcon.png">-->
+        <button class="btn" id ="goals" hidden> <img src="Images/GoalsIcon.png"></button>
+        <button class="btn" id ="pet" hidden> <img src="Images/PetIcon.png"></button>
+        <button class="btn" id ="shop" hidden> <img src="Images/ShopIcon.png"></button>
+        <button class="btn" id ="resources" hidden> <img src="Images/ResourcesIcon.png"></button>
+
         <canvas is="our-canvas"></canvas>
+
     </body>
-    <button> id ="onclick"<img src="Images/ResourcesIcon.png"></button>
-    <button> id ="onclick"<img src="Images/ShopIcon.png"></button>
-    <button> id ="onclick"<img src="Images/GoalsIcon.png"></button>
-    <button> id ="onclick"<img src="Images/PetIcon.png"></button>
-    <button> id ="onclick"<img src="Images/MenuIcon.png"></button>
+    
 </html>
