@@ -9,7 +9,13 @@
 /** @type Promise<HTMLImageElement> */export const Saolasantahat = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/Saola-santahat.png';});
 /** @type Promise<HTMLImageElement> */export const Saolatophat = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/Saola-tophat.png';});
 /** @type Promise<HTMLImageElement> */export const Saola = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/Saola.png';});
+/** @type Promise<HTMLImageElement> */export const AfricanForestElephantsantahat = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/AfricanForestElephant-santahat.png';});
+/** @type Promise<HTMLImageElement> */export const AfricanForestElephanttophat = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/AfricanForestElephant-tophat.png';});
+/** @type Promise<HTMLImageElement> */export const AfricanForestElephant = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/AfricanForestElephant.png';});
+/** @type Promise<HTMLImageElement> */export const SundaTigersantahat = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/SundaTiger-santahat.png';});
+/** @type Promise<HTMLImageElement> */export const SundaTigertophat = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/SundaTiger-tophat.png';});
+/** @type Promise<HTMLImageElement> */export const SundaTiger = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/SundaTiger.png';});
 /** @type Promise<HTMLImageElement> */export const SettingsIcon = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/SettingsIcon.png';});
 /** @type Promise<HTMLImageElement> */export const ShopIcon = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/ShopIcon.png';});
 /** @type Promise<HTMLImageElement> */export const profile = new Promise(r => {const x = new Image();x.onload = () => r(x);x.src = '/Images/profile.png';});
-export default {BackgroundYard,GoalsIcon,HawksbillTurtlesantahat,HawksbillTurtletophat,HawksbillTurtle,MenuIcon,PetIcon,ResourcesIcon,Saolasantahat,Saolatophat,Saola,SettingsIcon,ShopIcon,profile,};
+export default {BackgroundYard,GoalsIcon,HawksbillTurtlesantahat,HawksbillTurtletophat,HawksbillTurtle,MenuIcon,PetIcon,ResourcesIcon,Saolasantahat,Saolatophat,Saola,AfricanForestElephantsantahat,AfricanForestElephanttophat,AfricanForestElephant,SundaTigersantahat,SundaTigertophat,SundaTiger,SettingsIcon,ShopIcon,profile,};
