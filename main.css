@@ -1,3 +1,14 @@
 /*This will hold the styles for our buttons!*/
 .btn {position: absolute;}
+
+/*menu button*/
 #menu {width: 45px; height: 40px; left: 596px; top: 20px; background-image: url(/Images/MenuIcon.png); background-size: 45px 40px; padding: 0; border: none; background-color: transparent;}
+
+/*goals button*/
+#goals {width: 10px; height: 10px; left: 596px; bottom: 20px; background-image: url(/Images/MenuIcon.png); background-size: 45px 40px; padding: 0; border: none; background-color: transparent;}
+
+/*pet button*/
+
+/*shop button*/
+
+/*resources button*/
