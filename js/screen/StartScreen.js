@@ -9,7 +9,5 @@ export default class GoalAddScreen extends Screen
      */
      async draw(gs,ctx){
         ctx.drawImage(await GoalAdd, 0, 0);
-        console.log(MenuIcon)
-        ctx.drawImage(await MenuIcon, 30, 30)
     }
 }
