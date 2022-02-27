@@ -28,7 +28,7 @@ let resourceBtn = document.querySelector("#resources");
 goalBtn.addEventListener("click", changeScreen(goalBtn));
 petBtn.addEventListener("click", changeScreen(petBtn));
 shopBtn.addEventListener("click", changeScreen(shopBtn));
-resourceBtn.addEventListener("click", changeScreen(resourceBtn));
+//resourceBtn.addEventListener("click", changeScreen(resourceBtn));
 
 function changeScreen(btn){
     switch (btn) {
@@ -44,10 +44,10 @@ function changeScreen(btn){
           currentScreen = "shop";
           console.log("shop screen!")
           break;
-        case resourceBtn:
-          currentScreen = "resources";
-          console.log("resource screen!")
-          break;
+        // case resourceBtn:
+        //   currentScreen = "resources";
+        //   console.log("resource screen!")
+        //   break;
     }
 }
 
@@ -63,7 +63,7 @@ export default class Canvas extends HTMLCanvasElement
         this.width = 1080;
         this.height = 1920;
         this.style="max-width: 90vw; max-height: 90vh; border: 1px solid black";
-        this.gs.Screen = currentScreen;
+        this.gs.Screen = "main";
         const dialog = Dialog();
         console.log({dialog});
         const form = dialog.appendChild(document.createElement("form"));
