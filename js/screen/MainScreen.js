@@ -1,6 +1,6 @@
 import Screen from "./Screen.js";
 import Gamestate from "../GameState.js";
-import Images, { BackgroundYard } from "../../Images/Images.js";
+import Images, { BackgroundYard, GoalsIcon, PetIcon, ShopIcon } from "../../Images/Images.js";
 export default class MainScreen extends Screen
 {
     /**
@@ -13,7 +13,13 @@ export default class MainScreen extends Screen
         const hat = gs.Hat ?? ""
         console.log(gs)
         console.log(name + hat)
-        const image = await Images[name + hat]
-        ctx.drawImage(image, (screen.width/2)-(image.width), 1300);
+        const animalimage = await Images[name + hat]
+        ctx.drawImage(animalimage, (screen.width/2)-(animalimage.width), 1300);
+        ctx.drawImage(await GoalsIcon, 30, 1740)
+        ctx.drawImage(await PetIcon, 200, 1740, 153, 130)
+        console.log(ShopIcon)
+        ctx.drawImage(await ShopIcon, 370, 1740, 163, 130)
+        console.log(ResourcesIcon)
+        ctx.drawImage(await ResourcesIcon, 540, 1740, 164, 130)
     }
 }
