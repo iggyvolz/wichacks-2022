@@ -22,6 +22,6 @@ export default class MainScreen extends Screen
         console.log(ResourcesIcon + "is here")
         ctx.drawImage(await ResourcesIcon, 870, 1740)
         console.log(MenuIcon)
-        ctx.drawImage(await MenuIcon, 30, 30)
+        //ctx.drawImage(await MenuIcon, 30, 30)
     }
 }
