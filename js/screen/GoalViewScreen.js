@@ -1,13 +1,13 @@
 import Screen from "./Screen.js";
 import Gamestate from "../GameState.js";
 import Images, { BackgroundYard, GoalsIcon, MenuIcon, PetIcon, ResourcesIcon, ShopIcon } from "../../Images/Images.js";
-export default class MainScreen extends Screen
+export default class GoalViewScreen extends Screen
 {
     /**
      * @param {Gamestate} gs
      * @param {CanvasRenderingContext2D} ctx 
      */
-    async draw(gs,ctx){
+     async draw(gs,ctx){
         ctx.drawImage(await BackgroundYard, 0, 0);
         const name = gs.Animal.replaceAll(" ", "");
         const hat = gs.Hat ?? ""
