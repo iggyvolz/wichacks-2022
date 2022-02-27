@@ -6,16 +6,16 @@
 .btn {position: absolute;}
 
 /*menu button*/
-#menu {width: 45px; height: 40px; background-image: url(/Images/MenuIcon.png); background-size: 45px 40px; padding: 0; border: none; background-color: transparent;}
+#menu {width: 3.3vw; height: 5vh; background-image: url(/Images/MenuIcon.png); background-size: 3.3vw 5vh; padding: 0; border: none; background-color: transparent;}
 
 /*goals button*/
-#goals {width: 53px; height: 44px; background-image: url(/Images/GoalsIcon.png); background-size: 53px 44px; padding: 0; border: none; background-color: transparent;}
+#goals {width: 3.8vw; height: 5.5vh; top: 83vh; left: 38.5vw; background-image: url(/Images/GoalsIcon.png); background-size: 3.8vw 5.5vh; padding: 0; border: none; background-color: transparent;}
 
 /*pet button*/
-#pet {width: 53px; height: 44px; background-image: url(/Images/PetIcon.png); background-size: 53px 44px; padding: 0; border: none; background-color: transparent;}
+#pet {width: 3.4vw; height: 5.7vh; top: 83.2vh; left: 44.27vw; background-image: url(/Images/PetIcon.png); background-size: 3.4vw 5.7vh; padding: 0; border: none; background-color: transparent;}
 
 /*shop button*/
-#shop {width: 53px; height: 44px; background-image: url(/Images/ShopIcon.png); background-size: 53px 44px; padding: 0; border: none; background-color: transparent;}
+#shop {width: 3.4vw; height: 5.7vh; top: 83.2vh; left: 51.01vw; background-image: url(/Images/ShopIcon.png); background-size: 3.4vw 5.7vh; padding: 0; border: none; background-color: transparent;}
 
 /*resources button*/
-#resources {width: 53px; height: 44px; background-image: url(/Images/ResourcesIcon.png); background-size: 53px 44px; padding: 0; border: none; background-color: transparent;}
+#resources {width: 3.6vw; height: 5.8vh; top: 83.2vh; left: 57.4vw; background-image: url(/Images/ResourcesIcon.png); background-size: 3.6vw 5.8vh; padding: 0; border: none; background-color: transparent;}
